@@ -20,7 +20,7 @@ txt_name = "Sutton Reinforcement Learning textbook.pdf"
 # full_text = text_splitter.split_documents(book_data)
 
 # # Create text vectors to represent each chunk
-embeddings = OpenAIEmbeddings(openai_api_key="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")
+embeddings = OpenAIEmbeddings(openai_api_key="")
 
 pinecone.init(
     api_key="1003218d-8c9c-498f-9a59-94471f49f076",
@@ -35,7 +35,7 @@ docsearch = Pinecone.from_existing_index(index_name, embeddings)
 # docs = docsearch.similarity_search(query)
 
 # initialize llm
-llm= OpenAI(temperature=0, openai_api_key="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")
+llm= OpenAI(temperature=0, openai_api_key="")
 chain = load_qa_chain(llm, chain_type="stuff")
 
 
