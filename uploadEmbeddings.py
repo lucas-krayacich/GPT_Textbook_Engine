@@ -20,7 +20,7 @@ text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
 full_text = text_splitter.split_documents(book_data)
 
 # # Create text vectors to represent each chunk
-embeddings = OpenAIEmbeddings(openai_api_key="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")
+embeddings = OpenAIEmbeddings(openai_api_key="")
 
 # pinecone.init(
 #     api_key="1003218d-8c9c-498f-9a59-94471f49f076",
