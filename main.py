@@ -23,7 +23,7 @@ txt_name = "Sutton Reinforcement Learning textbook.pdf"
 embeddings = OpenAIEmbeddings(openai_api_key="")
 
 pinecone.init(
-    api_key="1003218d-8c9c-498f-9a59-94471f49f076",
+    api_key="",
     environment="asia-southeast1-gcp-free"
 )
 index_name="langproj"
